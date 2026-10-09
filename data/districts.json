@@ -1,0 +1,99 @@
+{
+  "_note": "Former districts in the v1 area (requirements §2), for search only. center = [lat, lon] used when a district has no spots; zoom = view zoom. Centres checked 2026-10-09: (1) Nominatim reverse geocoding of each centre (17 requests, 1.2 s apart) returned a new ward formed from that former district for 16 of 17; (2) Wikidata P625 coordinates are within 1 km for 14 and within 2 km for Quận 12 and Bình Tân (large districts). Thủ Đức was moved from 10.823, 106.75 (reverse-geocoded to Phường Bình Quới, former Bình Thạnh) to 10.82, 106.77 (Phường Phước Long, former Quận 9, now Thủ Đức).",
+  "districts": [
+    {
+      "name": "Quận 1",
+      "center": [10.7765, 106.7009],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 3",
+      "center": [10.7838, 106.6849],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 4",
+      "center": [10.759, 106.7045],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 5",
+      "center": [10.7546, 106.6677],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 6",
+      "center": [10.748, 106.6352],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 7",
+      "center": [10.734, 106.7218],
+      "zoom": 14
+    },
+    {
+      "name": "Quận 8",
+      "center": [10.724, 106.6286],
+      "zoom": 14
+    },
+    {
+      "name": "Quận 10",
+      "center": [10.7727, 106.668],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 11",
+      "center": [10.7629, 106.6501],
+      "zoom": 15
+    },
+    {
+      "name": "Quận 12",
+      "center": [10.8672, 106.6413],
+      "zoom": 13
+    },
+    {
+      "name": "Bình Thạnh",
+      "center": [10.8106, 106.7091],
+      "zoom": 14
+    },
+    {
+      "name": "Phú Nhuận",
+      "center": [10.7991, 106.6803],
+      "zoom": 15
+    },
+    {
+      "name": "Gò Vấp",
+      "center": [10.8387, 106.6653],
+      "zoom": 14
+    },
+    {
+      "name": "Tân Bình",
+      "center": [10.8015, 106.6527],
+      "zoom": 14
+    },
+    {
+      "name": "Tân Phú",
+      "center": [10.7918, 106.6278],
+      "zoom": 14
+    },
+    {
+      "name": "Bình Tân",
+      "center": [10.7653, 106.6039],
+      "zoom": 14
+    },
+    {
+      "name": "Thủ Đức",
+      "center": [10.82, 106.77],
+      "zoom": 13,
+      "aliases": [
+        "Quận 2",
+        "Quận 9",
+        "Thành phố Thủ Đức",
+        "TP Thủ Đức",
+        "Thu Duc City",
+        "District 2",
+        "District 9"
+      ]
+    }
+  ]
+}
