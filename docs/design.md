@@ -241,9 +241,13 @@ User reports with moderation (needs a backend such as PostgreSQL with PostGIS), 
 | **`data/districts.json`** holds the 17 former-district search entries (name, centre, zoom, aliases). | Moved out of the prototype code. Centres were checked in M3; see the M3 build PR. |
 | **`tests/`** (`node --test`, no dependencies), `.github/workflows/ci.yml`, `CLAUDE.md`, `.editorconfig`, `.gitattributes`, `.nojekyll` | Added for CI and maintenance. |
 | **Tiles: OSM only.** The prototype's Esri fallback for `file://` is removed. | Prototype-only choice (M2 notes). |
-| **Content-Security-Policy** meta tag: self, cdnjs, `tile.openstreetmap.org`, `nominatim.openstreetmap.org`. | M2 notes, item 7. |
+| **Content-Security-Policy** meta tag: self, cdnjs, `tile.openstreetmap.org`, `nominatim.openstreetmap.org`. No `'unsafe-inline'`: the prototype's inline `style=` attributes became CSS classes or SVG attributes. `img-src` also allows `data:`. | M2 notes, item 7. Leaflet sets a `data:` GIF as the `src` of tiles it removes while zooming; without `data:` every zoom logs CSP errors. |
 | **`<meta name="robots" content="noindex">`** | Until the M5 public launch. |
 | If `data/i18n.json` itself fails to load, `index.html` holds one static VI + EN fallback message. | That message cannot come from the file that failed. All other UI strings live in `data/i18n.json`. |
+| New strings `loading` and `dataFailed` (both languages). If the spots or districts fail to load, the message shows in VI and EN at once. | Spots load asynchronously after the map. |
+| Legend table cells may wrap long words (`overflow-wrap:anywhere`). | The table was 5 px wider than the 360 px desktop panel, which showed a horizontal scrollbar (same in the prototype). |
+| `favicon.svg` | Avoids a 404 console error for `/favicon.ico`. |
+| Licences: MIT for code (`LICENSE`), ODbL 1.0 for `data/hcmc-flood-spots.geojson` (`data/LICENSE-ODbL.md`). | The geometry was traced on OpenStreetMap. |
 
 ## 14. M2 decisions
 
