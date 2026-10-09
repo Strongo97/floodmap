@@ -1,0 +1,147 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            106.705,
+            10.758
+          ],
+          [
+            106.7068,
+            10.7562
+          ]
+        ]
+      },
+      "properties": {
+        "id": "hcmc-0001",
+        "name_vi": "Đường Thử hcmc-0001",
+        "name_en": "Test Street hcmc-0001",
+        "street": "Thử",
+        "ward": "Phường Thử",
+        "legacy_district": "Quận 4",
+        "cause": "rain",
+        "depth_cm": {
+          "min": 10,
+          "max": 20
+        },
+        "frequency": "occasional",
+        "status": "active",
+        "past_events": [
+          {
+            "date": "2027-01-01",
+            "cause": "rain",
+            "depth_cm": 20,
+            "description_vi": "Ngập",
+            "description_en": "Flooded",
+            "source": "https://example.org/flood-report"
+          }
+        ],
+        "sources": [
+          "https://example.org/flood-report"
+        ],
+        "notes": "",
+        "last_verified": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7,
+          10.77
+        ]
+      },
+      "properties": {
+        "id": "hcmc-0002",
+        "name_vi": "Đường Thử hcmc-0002",
+        "name_en": "Test Street hcmc-0002",
+        "street": "Thử",
+        "ward": "Phường Thử",
+        "legacy_district": "Quận 4",
+        "cause": "rain",
+        "depth_cm": {
+          "min": 10,
+          "max": 20
+        },
+        "frequency": "occasional",
+        "status": "active",
+        "past_events": [
+          {
+            "date": "2025-10-07",
+            "cause": "rain",
+            "depth_cm": 20,
+            "description_vi": "Ngập",
+            "description_en": "Flooded",
+            "source": "https://example.org/flood-report"
+          }
+        ],
+        "sources": [
+          "https://example.org/flood-report"
+        ],
+        "notes": "",
+        "last_verified": "2026-09-01"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.69,
+              10.76
+            ],
+            [
+              106.7,
+              10.76
+            ],
+            [
+              106.7,
+              10.77
+            ],
+            [
+              106.69,
+              10.76
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "hcmc-0003",
+        "name_vi": "Đường Thử hcmc-0003",
+        "name_en": "Test Street hcmc-0003",
+        "street": "Thử",
+        "ward": "Phường Thử",
+        "legacy_district": "Quận 4",
+        "cause": "rain",
+        "depth_cm": {
+          "min": 10,
+          "max": 20
+        },
+        "frequency": "occasional",
+        "status": "active",
+        "past_events": [
+          {
+            "date": "2025-10-07",
+            "cause": "rain",
+            "depth_cm": 20,
+            "description_vi": "Ngập",
+            "description_en": "Flooded",
+            "source": "https://example.org/flood-report"
+          }
+        ],
+        "sources": [
+          "https://example.org/flood-report"
+        ],
+        "notes": "",
+        "last_verified": "2026-09-01"
+      }
+    }
+  ]
+}
