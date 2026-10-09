@@ -1,0 +1,130 @@
+[
+  {
+    "file": "not-feature-collection.geojson",
+    "expect": "not a GeoJSON FeatureCollection"
+  },
+  {
+    "file": "feature-type.geojson",
+    "expect": "type must be Feature"
+  },
+  {
+    "file": "id-format.geojson",
+    "expect": "id must match hcmc-NNNN"
+  },
+  {
+    "file": "id-duplicate.geojson",
+    "expect": "duplicate id"
+  },
+  {
+    "file": "name-vi-missing.geojson",
+    "expect": "name_vi is required"
+  },
+  {
+    "file": "name-en-empty.geojson",
+    "expect": "name_en is required"
+  },
+  {
+    "file": "ward-missing.geojson",
+    "expect": "ward is required"
+  },
+  {
+    "file": "optional-not-string.geojson",
+    "expect": "street must be a string"
+  },
+  {
+    "file": "cause-enum.geojson",
+    "expect": "cause 'flood' not allowed"
+  },
+  {
+    "file": "frequency-enum.geojson",
+    "expect": "frequency 'often' not allowed"
+  },
+  {
+    "file": "status-enum.geojson",
+    "expect": "status 'fixed' not allowed"
+  },
+  {
+    "file": "depth-missing.geojson",
+    "expect": "depth_cm.min and depth_cm.max must be numbers"
+  },
+  {
+    "file": "depth-min-gt-max.geojson",
+    "expect": "depth_cm.min 40 > depth_cm.max 20"
+  },
+  {
+    "file": "depth-range.geojson",
+    "expect": "depth 250 cm outside 0–200"
+  },
+  {
+    "file": "past-events-not-array.geojson",
+    "expect": "past_events must be an array"
+  },
+  {
+    "file": "past-event-date.geojson",
+    "expect": "past_events[0].date '07/10/2025' is not an ISO date"
+  },
+  {
+    "file": "past-event-future.geojson",
+    "expect": "past_events[0].date 2027-01-01 is in the future"
+  },
+  {
+    "file": "past-event-source.geojson",
+    "expect": "past_events[0].source is not an http(s) URL"
+  },
+  {
+    "file": "past-event-cause.geojson",
+    "expect": "past_events[0].cause 'storm' not allowed"
+  },
+  {
+    "file": "past-event-depth.geojson",
+    "expect": "past_events[0].depth_cm must be a number from 0 to 200"
+  },
+  {
+    "file": "sources-empty.geojson",
+    "expect": "sources needs at least 1 http(s) URL"
+  },
+  {
+    "file": "sources-bad-url.geojson",
+    "expect": "source 'example.org/report' is not an http(s) URL"
+  },
+  {
+    "file": "last-verified-format.geojson",
+    "expect": "last_verified '2026-13-01' is not an ISO date"
+  },
+  {
+    "file": "last-verified-future.geojson",
+    "expect": "last_verified 2026-12-31 is in the future"
+  },
+  {
+    "file": "geometry-missing.geojson",
+    "expect": "missing geometry"
+  },
+  {
+    "file": "geometry-type.geojson",
+    "expect": "geometry type MultiPoint not allowed"
+  },
+  {
+    "file": "geometry-bad-position.geojson",
+    "expect": "bad position"
+  },
+  {
+    "file": "line-too-short.geojson",
+    "expect": "LineString needs at least 2 positions"
+  },
+  {
+    "file": "polygon-not-closed.geojson",
+    "expect": "Polygon ring not closed"
+  },
+  {
+    "file": "outside-bounds.geojson",
+    "expect": "outside the v1 bounds"
+  },
+  {
+    "file": "risk-stored.geojson",
+    "expect": "'risk' must not appear"
+  },
+  {
+    "file": "risk-nested.geojson",
+    "expect": "'risk' must not appear"
+  }
+]
